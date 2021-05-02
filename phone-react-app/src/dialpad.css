@@ -1,0 +1,14 @@
+.dialpad {
+    padding-top:180px;
+    line-height:0;
+    text-align: center;
+}
+  
+.dialpad p {
+    font-size:30px;  
+    cursor:pointer;
+}
+
+.dialpad span {
+    font-size:12px;
+}

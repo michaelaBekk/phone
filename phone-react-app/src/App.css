@@ -1,0 +1,46 @@
+.border {
+  border-top: 25px solid black;
+  border-bottom: 25px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  height:600px;
+  width:300px;
+  border-radius: 30px;
+  margin: auto;
+  box-shadow:5px 5px 10px rgba(128, 128, 128, 0.795);
+}
+
+.speaker {
+  width:50px;
+  height:5px;
+  border:1px solid rgba(128, 128, 128, 0.658);
+  border-radius:50px;
+  margin: -16px auto;
+}
+
+.camera {
+  width:10px;
+  height:10px;
+  border-radius:50px;
+  margin: 2.4% 70%;
+  background: rgba(87, 85, 85, 0.658);
+}
+
+.background {
+  background: whitesmoke;
+  height:546px;
+  width:298px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 2px 2px 10px 2px rgba(240, 234, 234, 0.829);
+}
+
+.call-button {
+  background: #00b300;
+  border:none;
+  border-radius: 50px;
+  width:50px;
+  height:50px;
+  cursor:pointer;
+  margin-top:20px;
+}
