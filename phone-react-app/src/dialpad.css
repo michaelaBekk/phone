@@ -1,14 +1,30 @@
 .dialpad {
-    padding-top:180px;
+    padding-top:170px;
     line-height:0;
     text-align: center;
 }
   
 .dialpad p {
-    font-size:30px;  
+    font-size:25px;  
     cursor:pointer;
 }
 
 .dialpad span {
     font-size:12px;
 }
+
+.dialed {
+    background: rgb(211, 211, 211);
+    border-radius:50px;
+    animation-name: selected;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin-left:15px;
+    margin-top:0px;
+    z-index: 0;
+}
+

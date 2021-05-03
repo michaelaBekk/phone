@@ -1,0 +1,28 @@
+.selected {
+    background: rgb(211, 211, 211);
+    border-radius:50px;
+    animation-name: selected;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    margin-left:-12px;
+    padding-right:25px;
+    z-index: 0;
+}
+
+@keyframes selected {
+    0%   {opacity:1}
+    25%  {opacity:50%}
+    50%  {opacity:30%}
+    100% {opacity:0}
+}
+  
+#selected {
+    color:#00b300;
+    border-bottom: 2px dotted #00b300;
+    position: relative;
+    z-index: 1;
+}

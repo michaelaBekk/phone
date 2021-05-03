@@ -1,0 +1,21 @@
+.footer { 
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top:8px;
+  cursor:pointer;
+}
+
+.footer span {
+    font-size:18px;
+}
+
+.footer span:nth-child(1) {
+    transform: rotate(90deg);
+}
+
+.square {
+    width:11px;
+    height:11px;
+    border:2px solid rgba(128, 128, 128, 0.795);
+    border-radius:4px;
+}

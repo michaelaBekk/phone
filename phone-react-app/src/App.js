@@ -1,25 +1,25 @@
 import './App.css';
 import DialPad from './dialpad';
+import Menu from './menu';
+import Header from './header';
+import Footer from './footer';
 
 function App() {
   return (
     <div className="border">
       <div className="speaker"></div>
       <div className="camera"></div>
-      {/* Header */}
-      <div className="flexbox justify-content-between">
-        <p className="bolder" style={{marginLeft:'20px'}}>Phone</p>
-        <span className="material-icons bolder" style={{marginRight:'20px', marginTop:'12px'}}>search</span>
-        {/* <input type="search" name="search" placeholder="search" /> */}
-      </div>
-      <div className="background">
+      <Header />
+      <div className="calling-background">
         <DialPad />
         <div style={{textAlign: 'center'}}>
           <button type="button" className="call-button">
             <span style={{color:'white', fontSize:'30px'}} className="material-icons">phone</span>
           </button>
         </div>
+        <Menu />
       </div>
+      <Footer />
     </div>
   );
 }
