@@ -1,12 +1,12 @@
 .footer { 
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding-top:8px;
   cursor:pointer;
 }
 
 .footer span {
     font-size:18px;
+    margin-top:11px;
 }
 
 .footer span:nth-child(1) {

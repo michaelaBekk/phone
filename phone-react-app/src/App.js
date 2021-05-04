@@ -1,23 +1,27 @@
+import React, {useState} from 'react';
 import './App.css';
 import DialPad from './dialpad';
+import Buttons from './buttons';
 import Menu from './menu';
 import Header from './header';
 import Footer from './footer';
 
 function App() {
+  const [number, setNumber] = useState('');
   return (
     <div className="border">
       <div className="speaker"></div>
       <div className="camera"></div>
       <Header />
-      <div className="calling-background">
-        <DialPad />
-        <div style={{textAlign: 'center'}}>
-          <button type="button" className="call-button">
-            <span style={{color:'white', fontSize:'30px'}} className="material-icons">phone</span>
-          </button>
+      <div className="background">
+        <div style={{position:'relative'}}>
+          <p className="number">{number}</p>
         </div>
-        <Menu />
+        <div className="calling-container">
+          <DialPad setNumber={setNumber} />
+          <Buttons number={number} setNumber={setNumber} />
+          <Menu />
+        </div>
       </div>
       <Footer />
     </div>

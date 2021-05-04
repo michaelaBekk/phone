@@ -1,19 +1,22 @@
 import React, {useState} from 'react';
 import './dialpad.css';
 
-export default function DialPad() {
+export default function DialPad(props) {
     const [dialPad, setDialPad] = useState({
         active: null,
         digits: [1,2,3,4,5,6,7,8,9,'*',0,'#'],
         letters: ['voicemail', 'ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ', '', '+']
     });
+    const [number, setNumber] = useState([]);
     const every_nth = (arr) => arr.filter((val, i) => i % 3 === 3 - 1);
 
     const selectDigit = (index) => {
         setDialPad({...dialPad, active: dialPad.digits[index]});
+        setNumber(prevNumber => [...prevNumber, dialPad.digits[index]]);
     }
     
     const toggleDialpadStyle = (index) => {
+        props.setNumber(number);
         if(dialPad.digits[index] === dialPad.active) {
             return "dialed";
         }else {
