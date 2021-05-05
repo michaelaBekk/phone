@@ -14,6 +14,9 @@ code {
 }
 
 /* general css */
+.green {
+  color:#00b300;
+}
 
 .gray {
   color: rgba(128, 128, 128, 0.795);
@@ -39,14 +42,16 @@ code {
   justify-content: space-around;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.justify-content-center {
+  justify-content: center;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-  margin:0;
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .bolder {

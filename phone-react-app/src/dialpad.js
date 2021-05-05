@@ -28,15 +28,13 @@ export default function DialPad(props) {
         <div className="dialpad flexbox justify-content-evenly flex-wrap">
             {dialPad.digits.map((digit, index) => {
             return digit == every_nth(dialPad.digits)[0] || digit == every_nth(dialPad.digits)[1] || digit == every_nth(dialPad.digits)[2] ? (
-                <div onClick={() => selectDigit(index)} key={index} style={{width:'33%', position:'relative'}}>
+                <div onClick={() => selectDigit(index)} key={index} style={{width:'33%'}}>
                     <p className={toggleDialpadStyle(index)}></p>
                     <p>{digit}</p>
-                    <p className="break"></p> 
                     <span className="gray">{dialPad.letters[index]}</span>
-                    <p className="break"></p> 
                 </div>
             ): (
-                <div onClick={() => selectDigit(index)} key={index} style={{width:'33%', position:'relative'}}>
+                <div onClick={() => selectDigit(index)} key={index} style={{width:'33%'}}>
                     <p className={toggleDialpadStyle(index)}></p>
                     {digit == '*' ? <p style={{fontSize:'35px'}}>{digit}</p> : <p>{digit}</p>}
                     {digit == 1 ? <span className="material-icons gray" style={{fontSize:'16px'}}>{dialPad.letters[index]}</span> : 

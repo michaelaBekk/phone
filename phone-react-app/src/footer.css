@@ -2,11 +2,11 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   cursor:pointer;
+  height: 46px;
 }
 
 .footer span {
     font-size:18px;
-    margin-top:11px;
 }
 
 .footer span:nth-child(1) {
@@ -18,4 +18,8 @@
     height:11px;
     border:2px solid rgba(128, 128, 128, 0.795);
     border-radius:4px;
+}
+
+#footerBackground {
+    background: #013535c0;
 }
